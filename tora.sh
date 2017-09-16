@@ -1,7 +1,6 @@
 #!/bin/bash
 
-HOST=""
-MAC_ADDRESS=""
+HOST="<put-raspberry-pi-host-here>"
 
 case $1 in
     -m|--mac)
@@ -11,9 +10,8 @@ case $1 in
     connect)
         echo "Connecting device to speaker."
         ssh $HOST '
-        pulseaudio --kill
-        pulseaudio -D
-        echo -e "power on\nconnect ${MAC_ADDRESS} \nquit" | bluetoothctl
+        pulseaudio --start
+        echo -e "power on\nconnect <put-mac-address-here> \nquit" | bluetoothctl
         '
         ;;
     disconnect)
