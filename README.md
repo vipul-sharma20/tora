@@ -4,6 +4,17 @@ Tora
 Use traditional wired speakers as wireless using raspberry pi. Just one command
 required.
 
+Usage
+-----
+
+Connect to speaker:
+
+* `tora connect`
+
+Disconnect:
+
+* `tora disconnect`
+
 Setup
 -----
 
