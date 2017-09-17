@@ -11,12 +11,12 @@ Setup
 * `sudo usermod -a -G lp pi`
 * `vi /etc/bluetooth/audio.conf`
 
-    [General]:
-    Enable=Source,Sink,Media,Socket
+        [General]:
+        Enable=Source,Sink,Media,Socket
 
 * `vi /etc/bluetooth/main.conf`
 
-    Class = 0x00041C
+        Class = 0x00041C
 
 * `vi /etc/pulse/daemon.conf`
 
@@ -25,8 +25,8 @@ Setup
 * `pulseaudio -D`
 * `vi /etc/udev/rules.d/99-input.rules`
 
-    SUBSYSTEM="input", GROUP="input", MODE="0660"
-    KERNEL=="input[0-9]*", RUN+="/usr/lib/udev/bluetooth"
+        SUBSYSTEM="input", GROUP="input", MODE="0660"
+        KERNEL=="input[0-9]*", RUN+="/usr/lib/udev/bluetooth"
 
 * `sudo mkdir /usr/lib/udev && cd /usr/lib/udev`
 * `vi bluetooth` and put [this](https://gist.github.com/vipul-sharma20/8798c31c1dfd80f60fe129e67897fcaf)
