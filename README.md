@@ -56,3 +56,9 @@ Connecting through Bluetooth
 * `pairable on`
 * `connect <mac-address-here>`
 
+The Name
+--------
+
+Meaning of Tora: [here](http://naruto.wikia.com/wiki/Tora)
+This is the first instance of wireless technology being used in this series
+
